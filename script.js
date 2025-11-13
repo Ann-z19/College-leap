@@ -1,3 +1,4 @@
+/* == Hero Slider == */
 let slideIndex = 1;
 showSlides(slideIndex);
 
