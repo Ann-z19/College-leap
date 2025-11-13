@@ -7,16 +7,17 @@
 
 :root{
   /* tokens */
-  --ink:#0d1321;          /* primary text */
-  --ink-2:#405071;        /* secondary text */
-  --ink-3:#6f7a93;        /* tertiary text */
-  --paper:#ffffff;        /* page background */
-  --muted:#f5f7fb;        /* alt sections */
-  --line:#e6edf5;         /* subtle lines */
-  --navy:#0f2947;         /* dark hero bg */
-  --card:#12233f;         /* framed panel bg */
-  --accent:#d04448;       /* red accent word */
-  --link:#1a2e6f;         /* deep blue link */
+  --ink:#0d1321;   
+  --ink-2:#405071; 
+  --ink-3:#6f7a93;
+  --paper:#ffffff; 
+  --muted:#f5f7fb; 
+  --line:#e6edf5;
+  --navy:#0f2947;
+  --card:#12233f;         
+  --accent:#d04448;
+  --dp-red: #b1272f;   
+  --link:#1a2e6f;         
   --radius:22px;
   --radius-sm:14px;
   --shadow:0 8px 28px rgba(6,15,40,.1);
@@ -93,7 +94,7 @@ h2{
 }
 
 .menu .btn {
-  background: #0072ff;
+  background: var(--dp-red);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -837,7 +838,7 @@ h3.eyebrow {
 }
 
 .t-left ul {
-  list-style: none;
+  list-style:circle;
   margin: 0;
   padding: 0;
   line-height: 1.7;
