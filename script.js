@@ -46,3 +46,44 @@ function autoSlides() {
   setTimeout(autoSlides, 5000); // 5-second interval
 }
 autoSlides();
+
+/* === TESTIMONIAL SLIDER === */
+let tIndex = 0;
+let tSlides = document.getElementsByClassName("t-slide");
+let tDotsBox = document.querySelector(".t-dots");
+
+// Create dots dynamically (matches slide count)
+for (let i = 0; i < tSlides.length; i++) {
+  let dot = document.createElement("span");
+  dot.setAttribute("data-id", i);
+  dot.onclick = function() {
+    showTestimonial(i);
+  };
+  tDotsBox.appendChild(dot);
+}
+
+let tDots = tDotsBox.getElementsByTagName("span");
+
+function showTestimonial(n) {
+  for (let i = 0; i < tSlides.length; i++) {
+    tSlides[i].style.display = "none";
+    tDots[i].classList.remove("active");
+  }
+
+  tSlides[n].style.display = "block";
+  tDots[n].classList.add("active");
+
+  tIndex = n;
+}
+
+// autoplay
+function autoTestimonial() {
+  tIndex++;
+  if (tIndex >= tSlides.length) tIndex = 0;
+  showTestimonial(tIndex);
+  setTimeout(autoTestimonial, 6000); // 6 seconds
+}
+
+showTestimonial(0);
+autoTestimonial();
+
