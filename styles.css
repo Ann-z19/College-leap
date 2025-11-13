@@ -186,6 +186,7 @@ h2{
 
 .caption h2{
   text-align: left;
+  color: var(--paper);
   font-size: 2rem;
   font-weight: normal;
   margin-top: 15rem;
@@ -193,6 +194,7 @@ h2{
 
 .caption2 h2{
   text-align: left;
+  color:var(--ink);
   font-size: 2rem;
   font-weight: normal;
   margin-top: 10rem;
@@ -328,6 +330,217 @@ h3.eyebrow {
 .logos img:hover {
   filter: none;
 }
+
+/* === WHO WE ARE === */
+#who.section {
+  padding-top: 96px; /* a little extra air like the screenshot */
+}
+
+#who h2 {
+  font-size: 2.75rem;
+  letter-spacing: 0.02em;
+  color: #b1272f; /* deep red headline */
+  margin-bottom: 0.35rem;
+}
+
+#who .subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7a90; /* slate/blue gray */
+  margin-bottom: 2.5rem;
+}
+
+.who-grid {
+  align-items: center;
+  column-gap: 3rem;
+}
+
+/* Left column: seal + socials stacked */
+#who .media {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+#who .media img {
+  width: 250px;
+  margin: 1rem auto;
+  max-width: 60vw;
+}
+
+/* Social row under the seal */
+#who .social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+#who .social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  transition: transform .15s ease, filter .2s ease;
+}
+#who .social img:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.1);
+}
+
+.who-copy {
+  text-align: center;
+  background: transparent;
+  box-shadow: none;
+}
+
+.who-copy .lede {
+  color: #3b4761;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.bullets {
+  list-style: none;
+  margin: 0 auto 1rem;
+  padding: 0;
+  display: grid;
+  gap: .6rem;
+}
+
+.bullets-links li {
+  color: #6b7a90;
+  font-weight: 600;
+  letter-spacing: .2px;
+  transition: color .2s ease;
+  cursor: default;
+}
+
+/* make items feel like subtle links on hover */
+.bullets-links li:hover {
+  color: #1f5bd8; /* blue hover */
+}
+
+#who .fine.center {
+  color: #6b7a90;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* === COLLEGE LEAP PROGRAMS SECTION === */
+#resources {
+  background-color: #f3f9ff;           /* light blue panel */
+  border-top: 8px solid #dde7ff;       /* subtle colored bands */
+  border-bottom: 8px solid #c6c0f0;
+}
+
+#resources h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b1272f;                      /* same red as Who We Are title */
+  margin-bottom: 0.3rem;
+}
+
+#resources .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6b7a90;
+  margin-bottom: 2.5rem;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left column text */
+.program-copy {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #52607c;
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.program-fields {
+  font-weight: 600;
+  margin: 1.5rem 0 1.5rem;
+  color: #3b4761;
+}
+
+/* Right column: past projects */
+.program-past {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* "Past Projects" tag */
+.past-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background: #b1272f;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.6rem 1.3rem;
+  border-radius: 2px;
+  font-size: 0.95rem;
+}
+
+/* dotted vertical line */
+.program-past::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 70px;
+  left: 14px;
+  border-left: 2px dotted #c3cfe8;
+}
+
+/* logos on the right side */
+.past-logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 1fr));
+  gap: 1.5rem 2rem;
+  justify-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.past-logos img {
+  max-height: 70px;
+  width: auto;
+  filter: grayscale(10%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.past-logos img:hover {
+  transform: translateY(-2px);
+  filter: none;
+}
+
+.past-logos .ccbi img {
+  max-height: 55px;
+}
+
+.past-note {
+  font-size: 0.8rem;
+  color: #8691aa;
+  text-align: right;
+}
+
+
+
+
 
 /* === FOOTER === */
 .site-footer {
