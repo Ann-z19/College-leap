@@ -1098,3 +1098,295 @@ filter: opacity(0.65);
   filter: brightness(1.05);
 }
 
+/* == Chapter page ==*/
+/* ===== Chapter Hero (static) ===== */
+#chapter-hero{
+  position: relative;
+  background:#0f172a;  /* fallback color */
+  color:#fff;
+  padding-top: var(--header-h); /* ensures hero starts BELOW sticky header */
+}
+
+.ch-viewport{
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 34vw, 420px);
+  overflow: hidden;
+}
+
+/* background photo */
+.ch-bg{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  margin: 0;
+  object-fit:cover;
+  transform:scale(1.02);
+  filter: brightness(.82);
+}
+
+/* dark overlay */
+.ch-overlay{
+  position:absolute; inset:0;
+  background:rgba(0,0,0,.55);
+}
+
+/* centered title */
+.ch-title{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  margin:0; padding:0 16px;
+  font-weight:400;
+  font-size:clamp(22px,3.6vw,44px);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  z-index:3;
+}
+
+/* =====================
+   WHAT IS LEAP CHAPTER
+   ===================== */
+
+#what-is-chapter {
+  padding: 60px 0 90px;
+  text-align: center;
+}
+
+.wic-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #d53333;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wic-sub {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.55;
+  color: #444;
+  font-size: 15px;
+}
+
+.wic-desc {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.wic-desc .highlight {
+  color: #d53333;
+  font-weight: 700;
+}
+
+/* Cards Grid */
+.wic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card */
+.wic-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: #fff;
+  min-height: 130px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+}
+
+.wic-card img {
+  width: 60px;
+  height: auto;
+}
+
+/* Title + text */
+.wic-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+.wic-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.45;
+}
+
+/* Colors */
+.wic-gray   { background: #efefef; box-shadow: 6px 6px #d4d4d4; }
+.wic-yellow { background: #f7e287; box-shadow: 6px 6px #e3c95b; }
+.wic-orange { background: #f8c5a1; box-shadow: 6px 6px #e5a276; }
+.wic-green  { background: #c6eec7; box-shadow: 6px 6px #96d89b; }
+
+/* ===== BENEFITS ===== */
+#benefits {
+  padding: 60px 0 80px;
+  background: #fafbfe;
+  text-align: center;
+}
+
+.benefits-title {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #d53333;
+  margin-bottom: 8px;
+}
+
+.benefits-sub {
+  font-size: 15px;
+  color: #6c6f7c;
+  margin-bottom: 50px;
+}
+
+/* Center & tighten layout */
+.benefits-grid {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.benefit {
+  max-width: 300px;
+  text-align: left;
+}
+
+.benefit-illus {
+  height: 130px;       
+  width: auto;         
+  display: block;
+  margin: 0 auto 6px;
+  object-fit: contain;   
+}
+
+
+/* Titles */
+.benefit h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 0 8px;
+  color: #c73434;
+}
+
+/* Bullet list */
+.benefit ul {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+.benefit li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: #51576A;
+  font-size: 15px;
+}
+
+/* ==========================
+   CHAPTER ESTABLISHMENT
+   ========================== */
+
+#chapter-establishment {
+  background: #fff4f5; /* light pink background */
+  padding: 70px 0 90px;
+}
+
+.ce-wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ce-title {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #c93737;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.ce-sub {
+  font-size: 14px;
+  color: #7a7d88;
+  margin-bottom: 60px;
+}
+
+/* Layout grid */
+.ce-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Left labels */
+.ce-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+  padding-top: 8px;
+}
+
+.ce-label {
+  font-size: 15px;
+  color: #3d3f50;
+  font-weight: 600;
+  text-align: right;
+}
+
+.ce-or {
+  margin: 30px 0;
+  text-align: right;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Vertical dashed line */
+.ce-divider-vertical {
+  border-left: 2px dashed #ccc;
+  height: 330px;
+  margin: 0 auto;
+}
+
+/* Right side steps */
+.ce-right {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.ce-steps {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.ce-steps a {
+  color: #c93434;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ce-divider-horizontal {
+  border-top: 2px dashed #ccc;
+  width: 100%;
+  margin: 25px 0;
+}
+
+
+
+
+
+
+
+
