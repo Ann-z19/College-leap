@@ -1998,6 +1998,364 @@ filter: opacity(0.65);
   }
 }
 
+/* ===== TEAM HERO BANNER ===== */
+#team-hero{
+  width:100%;
+}
+
+.team-hero-inner{
+  position:relative;
+  height: 450px;;
+  overflow:hidden;
+  background:#000;
+}
+
+.team-hero-bg{
+  padding-top: 80px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: center top;
+}
+
+/* dark overlay */
+.team-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.42);
+}
+
+/* centered logo + title */
+.team-hero-center{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-align:center;
+}
+
+.team-hero-mark{
+  width:100px;
+  height:auto;
+  opacity:.9;
+}
+
+.team-hero-title{
+  margin:0;
+  color:#fff;
+  font-size:56px;
+  font-weight:400;      
+  letter-spacing:.02em;
+  text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+
+/* responsive */
+@media (max-width:800px){
+  .team-hero-inner{ height:200px; }
+  .team-hero-title{ font-size:36px; }
+}
+
+/* ===== PEOPLE ===== */
+#people{
+  background:#fff;
+  padding:70px 0 0;
+}
+
+.people-wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 24px;
+  text-align:center;
+}
+
+/* shared titles */
+.people-title{
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#C93A3A;
+  margin:0 0 6px;
+}
+
+.people-sub{
+  font-size:13px;
+  color:#7A7D88;
+  margin:0 0 34px;
+}
+
+/* FOUNDERS row */
+.founders-grid{
+  display:flex;
+  justify-content:center;
+  gap:90px;
+  padding:10px 0 55px;
+}
+
+.person img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 12px;
+}
+
+.person-name{
+  font-size:13px;
+  color:#E35A66; 
+  font-weight:600;
+}
+
+/* ADVISORS panel */
+.advisors-panel{
+  background:#F4F5F7; 
+  padding:50px 0 70px;
+  margin-top:14px;
+}
+
+/* advisors grid */
+.advisors-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:34px 28px;
+  margin-top:18px;
+}
+
+.advisor{
+  text-align:center;
+}
+
+.advisor img{
+  width:92px;
+  height:92px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 12px;
+  filter: grayscale(100%); 
+}
+
+.advisor-name{
+  font-size:13px;
+  font-weight:600;
+  color:#E35A66;
+  margin-bottom:6px;
+}
+
+.advisor-role{
+  font-size:10px;
+  color:#2F2F2F;
+  margin-bottom:3px;
+}
+
+.advisor-org{
+  font-size:10px;
+  color:#6C6F7A;
+  line-height:1.35;
+}
+
+/* responsive */
+@media (max-width:1100px){
+  .advisors-grid{ grid-template-columns:repeat(3, 1fr); }
+  .founders-grid{ gap:48px; }
+}
+
+@media (max-width:650px){
+  .advisors-grid{ grid-template-columns:repeat(2, 1fr); }
+  .founders-grid{ flex-direction:column; gap:26px; }
+}
+
+/* ===== DIVERSITY COMMITTEES ===== */
+#diversity-committees{
+  background:#fff;
+  padding:70px 0 90px;
+}
+
+.dc-wrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+  text-align:center;
+}
+
+.dc-title{
+  font-size:34px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#C93A3A;
+  margin:0 0 6px;
+}
+
+.dc-sub{
+  font-size:13px;
+  color:#7A7D88;
+  margin:0 0 18px;
+}
+
+
+.dc-sub::after{
+  content:"";
+  display:block;
+  width:34px;
+  height:3px;
+  background:#111;
+  margin:10px auto 0;
+  border-radius:2px;
+}
+
+.dc-heading{
+  font-size:28px;
+  font-weight:700;
+  color:#14213D;
+  margin:18px 0 34px;
+}
+
+
+.dc-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:42px 40px;
+  justify-items:center;
+}
+
+/* card */
+.dc-card{
+  text-align:center;
+}
+
+/* photo circle + flag badge */
+.dc-photo{
+  position:relative;
+  width:110px;
+  height:110px;
+  margin:0 auto 14px;
+}
+
+.dc-avatar{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  filter: grayscale(100%);
+}
+
+/* small flag badge */
+.dc-flag{
+  position:absolute;
+  left:-8px;
+  top:-10px;
+  width:26px;
+  height:18px;
+  object-fit:cover;
+  border-radius:3px;
+  box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+/* name + country */
+.dc-name{
+  font-size:13px;
+  font-weight:600;
+  color:#FF6B6B;
+  margin-bottom:3px;
+}
+
+.dc-country{
+  font-size:11px;
+  color:#6C6F7A;
+}
+
+/* responsive */
+@media (max-width:1100px){
+  .dc-grid{ grid-template-columns:repeat(4, 1fr); }
+}
+@media (max-width:900px){
+  .dc-grid{ grid-template-columns:repeat(3, 1fr); }
+}
+@media (max-width:600px){
+  .dc-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+@media (max-width:420px){
+  .dc-grid{ grid-template-columns:1fr; }
+}
+
+/* ===== University Representatives Grid ===== */
+
+.dc-heading-wide{
+  margin-top: 55px;      
+  margin-bottom: 36px;
+}
+
+
+.uni-grid{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 46px 36px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* card */
+.uni-card{
+  text-align: center;
+}
+
+/* avatar */
+.uni-avatar{
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 14px;
+  filter: grayscale(100%); 
+  background: #e6e6e6;
+}
+
+/* name */
+.uni-name{
+  font-size: 13px;
+  font-weight: 600;
+  color: #FF6B6B;
+  margin-bottom: 10px;
+}
+
+/* university logo under name */
+.uni-logo{
+  width: 160px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  opacity: .95;
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .uni-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px){
+  .uni-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px){
+  .uni-grid{ grid-template-columns: repeat(2, 1fr); }
+  .uni-logo{ width: 150px; }
+}
+@media (max-width: 420px){
+  .uni-grid{ grid-template-columns: 1fr; }
+}
+
+
+
 
 
 
