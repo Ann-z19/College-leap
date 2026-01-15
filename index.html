@@ -37,7 +37,7 @@
       <div class="caption">
         <h2>EMPOWER COMMUNITY COLLEGE STUDENTS NATIONWIDE</h2>
         <p>A National 501(C)3 Nonprofit Organization to provide Career, Extracurricular, Volunteer, and Transfer Resources and Information</p>
-        <a href="chapters.html" class="btn hero-btn1">Our Chapters</a>
+        <a href="#chapter" class="btn hero-btn1" id="openChaptersModal">Our Chapters</a>
         <a href="#projects" class="btn hero-btn1">Our projects</a>
         <a href="https://www.collegeleap.cc/join-us" class="btn hero-btn1">Join Us</a>
       </div>
@@ -606,6 +606,68 @@
   </div>
 </section>
 
+<!-- OUR CHAPTERS MODAL -->
+<div id="chaptersModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay" data-close="true"></div>
+
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="chaptersModalTitle">
+    <button class="modal-close" type="button" aria-label="Close" data-close="true">×</button>
+
+    <div class="modal-grid">
+      <!-- Left: columns -->
+      <div class="modal-cols">
+        <div class="modal-col">
+          <h3>NORTHERN<br>CALIFORNIA</h3>
+          <ul>
+            <li>Foothill College</li>
+            <li>De Anza College</li>
+            <li>Diablo Valley College</li>
+            <li>City College of San Francisco</li>
+            <li>College of San Mateo</li>
+            <li>Berkeley City College</li>
+            <li>Las Positas College</li>
+            <li>*Santa Rosa Junior College</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>SOUTHERN<br>CALIFORNIA</h3>
+          <ul>
+            <li>Pasadena City College</li>
+            <li>Irvine Valley College</li>
+            <li>East Los Angeles College</li>
+            <li>Santa Monica College</li>
+          </ul>
+          <div class="modal-note">* means chapters at these colleges are under construction</div>
+        </div>
+
+        <div class="modal-col">
+          <h3>WASHINGTON<br>STATE</h3>
+          <ul>
+            <li>Shoreline Community College</li>
+            <li>Edmonds College</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>OTHERS</h3>
+          <ul>
+            <li>Jamestown College (NY)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: logo + button -->
+      <aside class="modal-side">
+        <img class="modal-mark" src="image/homepage/com_college-logo.avif" alt="College Leap seal">
+        <a class="modal-btn" href="chapters.html">Chapter Homepage</a>
+      </aside>
+    </div>
+  </div>
+</div>
+
+     <script src="script.js"></script>
+</body>
 
   <!-- Footer -->
 <footer class="site-footer">
@@ -643,7 +705,4 @@
     </a>
   </div>
 </footer>
-
-     <script src="script.js"></script>
-</body>
 </html>

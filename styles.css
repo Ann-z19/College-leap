@@ -1282,6 +1282,130 @@ filter: opacity(0.65);
   font-size: 15px;
 }
 
+/* ===== Modal (Our Chapters) ===== */
+.modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.modal.is-open{ display: block; }
+
+.modal-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+}
+
+/* panel */
+.modal-panel{
+  position: relative;
+  max-width: 1180px;
+  margin: 54px auto;
+  background: #f7f2dc; /* cream */
+  border-radius: 6px;
+  padding: 44px 44px 38px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+/* close X */
+.modal-close{
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  border: 0;
+  background: transparent;
+  font-size: 38px;
+  line-height: 1;
+  cursor: pointer;
+  color: #222;
+  opacity: .9;
+}
+.modal-close:hover{ opacity: 1; }
+
+/* layout */
+.modal-grid{
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 42px;
+  align-items: start;
+}
+
+.modal-cols{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+}
+
+.modal-col h3{
+  margin: 0 0 18px;
+  font-size: 15px;
+  letter-spacing: .08em;
+  font-weight: 800;
+  color: #111;
+}
+
+.modal-col ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-col li{
+  margin: 12px 0;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+
+.modal-note{
+  margin-top: 26px;
+  font-size: 11px;
+  color: #c03a3a;
+}
+
+/* right side */
+.modal-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-top: 6px;
+}
+
+.modal-mark{
+  width: 110px;
+  height: auto;
+  opacity: .95;
+}
+
+.modal-btn{
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 2px solid #6b4a74;
+  color: #6b4a74;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.modal-btn:hover{
+  background: #6b4a74;
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 1100px){
+  .modal-panel{ margin: 20px; }
+  .modal-grid{ grid-template-columns: 1fr; }
+  .modal-cols{ grid-template-columns: repeat(2, 1fr); }
+  .modal-side{ flex-direction: row; justify-content: center; padding-top: 16px; }
+}
+@media (max-width: 640px){
+  .modal-cols{ grid-template-columns: 1fr; }
+}
+
+
 /* ==========================
    CHAPTER ESTABLISHMENT
    ========================== */
