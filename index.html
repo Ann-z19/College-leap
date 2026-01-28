@@ -38,7 +38,7 @@
         <h2>EMPOWER COMMUNITY COLLEGE STUDENTS NATIONWIDE</h2>
         <p>A National 501(C)3 Nonprofit Organization to provide Career, Extracurricular, Volunteer, and Transfer Resources and Information</p>
         <a href="#chapter" class="btn hero-btn1" id="openChaptersModal">Our Chapters</a>
-        <a href="#projects" class="btn hero-btn1">Our projects</a>
+        <a href="#projects" class="btn hero-btn1" id="openProjectModal">Our projects</a>
         <a href="https://www.collegeleap.cc/join-us" class="btn hero-btn1">Join Us</a>
       </div>
     </div>
@@ -47,7 +47,7 @@
       <img src="image/homepage/slider/slide-2.avif" alt="slide2">
       <div class="caption2">
         <h2>WE ESTABLISH <span class="red-text">CHAPTERS</span> AT COMMUNITY COLLEGES TO EMPOWER STUDENTS THERE</h2>
-        <a href="https://www.collegeleap.cc/chapters" class="btn hero-btn2">Chapters Homepage</a>
+        <a href="chapters.html" class="btn hero-btn2">Chapters Homepage</a>
       </div>
     </div>
 
@@ -624,19 +624,19 @@
             <li><a href="DiabloValley.html" class="modal-list">Diablo Valley College</a></li>
             <li><a href="CCSF.html" class="modal-list">City College of San Francisco</a></li>
             <li><a href="CSM.html" class="modal-list">College of San Mateo</a></li>
-            <li>Berkeley City College</li>
-            <li>Las Positas College</li>
-            <li>*Santa Rosa Junior College</li>
+            <li><a href="BerkeleyCity.html" class="modal-list">Berkeley City College</a></li>
+            <li><a href="LasPositas.html" class="modal-list">Las Positas College</a></li>
+            <li><a href="SRJC.html" class="modal-list">*Santa Rosa Junior College</a></li>
           </ul>
         </div>
 
         <div class="modal-col">
           <h3>SOUTHERN<br>CALIFORNIA</h3>
           <ul>
-            <li>Pasadena City College</li>
-            <li>Irvine Valley College</li>
-            <li>East Los Angeles College</li>
-            <li>Santa Monica College</li>
+            <li><a href="pasadena.html" class="modal-list">Pasadena City College</a></li>
+            <li><a href="IVC.html" class="modal-list">Irvine Valley College</a></li>
+            <li><a href="ELAC.html" class="modal-list">East Los Angeles College</a></li>
+            <li><a href="SantaMonica.html" class="modal-list">Santa Monica College</a></li>
           </ul>
           <div class="modal-note">* means chapters at these colleges are under construction</div>
         </div>
@@ -644,15 +644,15 @@
         <div class="modal-col">
           <h3>WASHINGTON<br>STATE</h3>
           <ul>
-            <li>Shoreline Community College</li>
-            <li>Edmonds College</li>
+            <li><a href="Shoreline.html" class="modal-list">Shoreline Community College</a></li>
+            <li><a href="Edmonds.html" class="modal-list">Edmonds College</a></li>
           </ul>
         </div>
 
         <div class="modal-col">
           <h3>OTHERS</h3>
           <ul>
-            <li>Jamestown College (NY)</li>
+            <li><a href="Jamestown.html" class="modal-list">Jamestown College (NY)</a></li>
           </ul>
         </div>
       </div>
@@ -665,6 +665,88 @@
     </div>
   </div>
 </div>
+
+<!--Project Modal-->
+<div id="projectModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay" data-close="true"></div>
+
+  <div class="pr-modal-panel" role="dialog" aria-modal="true" aria-labelledby="chaptersModalTitle">
+    <button class="modal-close" type="button" aria-label="Close" data-close="true">×</button>
+
+    <div class="modal-grid">
+      <!-- Left: columns -->
+      <div class="modal-cols">
+        <div class="modal-col">
+          <h3>BUSINESS</h3>
+          <ul>
+            <li><a href="" class="modal-list">2020 National Business Plan Competition (NBPC)</a></li>
+            <li><a href="" class="modal-list">2021 Community College Business Invitation</a></li>
+
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>TRANSFER</h3>
+          <ul>
+            <li><a href="" class="modal-list">2020 Transfer Student Panel Series (TSPS)</a></li>
+            <li><a href="" class="modal-list">International Alumni Network (IAN)</a></li>
+            <li><a href="" class="modal-list">Opportunities at Universities  (OAU)</a></li>
+
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>SOCIAL SCIENCE</h3>
+          <ul>
+            <li><a href="" class="modal-list">2021 Creative Research Challenge (CRC)</a></li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>STEM</h3>
+        </div>
+
+        <div class="modal-col">
+          <h3>ART & Humanities</h3>
+        </div>
+
+        <div class="modal-col">
+          <h3>INTERNSHIP</h3>
+          <ul>
+            <li><a href="" class="modal-list">Career & Internship Preparation Seminar (CIPS)</a></li>
+            <li><a href="" class="modal-list">Intern-At-Startups(IAAS)</a></li>
+          </ul>
+        </div>
+        
+        <div class="modal-col">
+          <h3>VOLUNTEER</h3>
+          <ul>
+            <li><a href="" class="modal-list">Volunteer Database</a></li>
+            <li><a href="" class="modal-list">Community Service Awards(CSA)</a></li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <h3>GENERAL</h3>
+          <ul>
+            <li><a href="" class="modal-list">College Leap General Resource Database</a></li>
+            <li><a href="" class="modal-list">College forum</a></li>
+            <li><a href="" class="modal-list">Group</a></li>
+            <li><a href="" class="modal-list">Campus Resources Guide</a></li>
+            <li><a href="" class="modal-list">Transfer Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: logo + button -->
+      <aside class="modal-side modal-col">
+        <a class="modal-btn" href="chapters.html">Become A Project Associate</a>
+      </aside>
+    </div>
+  </div>
+</div>
+
+
 
      <script src="script.js"></script>
 </body>

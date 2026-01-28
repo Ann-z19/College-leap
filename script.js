@@ -120,3 +120,36 @@ autoTestimonial();
     if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
   });
 })();
+
+//====== Projects Modal ======
+(() => {
+  const modal = document.getElementById('projectModal');
+  const openBtn = document.getElementById('openProjectModal');
+  if (!modal || !openBtn) return;
+
+  const open = () => {
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const close = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    open();
+  });
+
+  modal.addEventListener('click', (e) => {
+    const shouldClose = e.target?.dataset?.close === 'true';
+    if (shouldClose) close();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+  });
+})();
