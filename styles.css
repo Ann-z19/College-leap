@@ -2654,6 +2654,281 @@ filter: opacity(0.65);
   .clt-grid{ grid-template-columns:1fr; }
 }
 
+/* HERO */
+.fh-hero{
+  position:relative;
+  width:100%;
+  height:520px;             
+  overflow:hidden;
+  background:var(--navy);
+}
+
+/* background image */
+.fh-hero-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transform: scale(1.06);
+}
+
+/* overlay */
+.fh-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(1200px 520px at 50% 45%, rgba(255,255,255,.12) 0%, rgba(0,0,0,.0) 30%),
+    linear-gradient(to right, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,.55) 50%);
+}
+
+.fh-hero-center{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0 20px;
+  z-index:2;
+}
+
+.fh-mark{
+  width:min(550px, 92vw);  
+  height:auto;
+  display:block;
+  opacity:.95;
+}
+
+/* responsive */
+@media (max-width: 700px){
+  .fh-hero{ height:320px; }
+  .fh-mark{ width:min(300px, 92vw); }
+}
+
+/* ===== Foothill intro (video + text) ===== */
+#fh-intro{
+  background:#fff;
+  padding: 26px 0 70px;
+}
+
+.fh-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* lockup centered */
+.fh-lockup{
+  text-align:center;
+  margin-bottom: 22px;
+}
+
+.fh-lockup-img{
+  width: 190px;
+  height: auto;
+  display:block;
+  margin: 0 auto 10px;
+}
+
+.fh-title{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color:#7b1f1f; 
+}
+
+/* 2-col layout */
+.fh-grid{
+  display:grid;
+  grid-template-columns: 520px 1fr;
+  gap: 70px;
+  align-items: start;
+  justify-content: center;
+}
+
+/* video box */
+.fh-video{
+  width: 520px;
+  height: 290px;
+  background:#000;
+}
+
+.fh-video iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
+/* right column */
+.fh-copy{
+  max-width: 520px;
+  color:#5c6a84;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.fh-lead{
+  margin: 0 0 18px;
+}
+
+.fh-accent{
+  color:#c93a3a;
+  font-weight: 700;
+}
+
+
+.fh-label{
+  margin: 0 0 8px;
+  font-weight: 700;
+  color:#5c6a84;
+  text-decoration: underline;
+}
+
+/* numbered list */
+.fh-list{
+  margin: 0 0 22px 18px;
+  padding: 0;
+}
+.fh-list li{
+  margin: 6px 0;
+}
+.fh-list a{
+  color:#5c6a84;
+  text-decoration: underline;
+}
+
+/* contact */
+.fh-contact{
+  margin: 18px 0 14px;
+  color:#5c6a84;
+}
+.fh-contact a{
+  color:#5c6a84;
+  text-decoration: none;
+}
+.fh-contact a:hover{ text-decoration: underline; }
+
+/* social icons */
+.fh-social{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+  margin-top: 12px;
+}
+.fh-social img{
+  width: 44px; 
+  height: 44px;
+  object-fit: contain;
+  display:block;
+}
+
+/* responsive */
+@media (max-width: 1050px){
+  .fh-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-items:center;
+  }
+  .fh-video{
+    width: min(720px, 92vw);
+    height: 380px;
+  }
+  .fh-copy{
+    max-width: 720px;
+  }
+}
+
+/* SECTION BASE */
+.chapter-social {
+  padding: 80px 5%;
+  background: #f4f7fb;
+}
+
+/* HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  color: #1d2b4f;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* CONTENT GRID */
+.section-content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FLYER */
+.flyer-card img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* SOCIAL CARD */
+.social-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+.social-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1d2b4f;
+}
+
+/* FB LINK */
+.social-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flyer-card img {
+    max-width: 360px;
+  }
+
+  .social-card {
+    max-width: 420px;
+  }
+}
 
 
 
