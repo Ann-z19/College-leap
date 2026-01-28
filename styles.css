@@ -1292,6 +1292,11 @@ filter: opacity(0.65);
 
 .modal.is-open{ display: block; }
 
+.modal-list{
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
 .modal-overlay{
   position: absolute;
   inset: 0;
@@ -1355,7 +1360,6 @@ filter: opacity(0.65);
 .modal-col li{
   margin: 12px 0;
   font-size: 13px;
-  color: #2c2c2c;
 }
 
 .modal-note{
