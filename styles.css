@@ -2945,6 +2945,239 @@ filter: opacity(0.65);
 }
 
 
+/* ====== SECTION ====== */
+.membership-section {
+  padding: 56px 5% 90px;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #1b1b1b;
+}
+
+/* ====== TITLE (GRID) ====== */
+.section-title {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 6px;
+  text-align: center;
+  margin: 40px auto 34px;
+}
+
+.title-kicker {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #1f2a5a;
+}
+
+.title-main {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: #d3413b;
+}
+
+.title-sub {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #1f2a5a;
+}
+
+.title-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d3413b;
+}
+
+/* ====== CARDS WRAPPER ====== */
+.membership-cards {
+  display: grid;
+  gap: 42px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ====== CARD BASE ====== */
+.membership-card {
+  display: grid;
+  grid-template-columns: 70px 1fr 1.35fr;
+  overflow: hidden;
+}
+
+/* alternating backgrounds (matches your screenshot vibe) */
+.membership-card--gray {
+  background: #f3f3f3;
+}
+
+.membership-card--blue {
+  background: #e9f6ff;
+}
+
+/* rail */
+.membership-rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-rail-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 26px;
+  font-weight: 500;
+  color: #1f2a5a;
+  letter-spacing: 0.02em;
+}
+
+/* body */
+.membership-body {
+  padding: 44px 34px 38px;
+}
+
+.membership-role {
+  margin: 0 0 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2a5a;
+}
+
+.membership-line {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.membership-block {
+  margin-top: 16px;
+}
+
+.membership-label {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d3413b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.membership-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.membership-list li {
+  margin-bottom: 8px;
+}
+
+.membership-list--ordered {
+  padding-left: 22px;
+}
+
+/* highlight */
+.membership-highlight {
+  color: #d3413b;
+  font-weight: 700;
+}
+
+/* button */
+.membership-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 10px 16px;
+  background: #1f2a5a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.membership-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* image */
+.membership-media {
+  margin: 0;
+  display: flex;
+}
+
+.membership-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* background variant for Chapter Leader */
+.membership-card--cream {
+  background: #f6f3df; /* warm cream like your screenshot */
+}
+
+/* make sure inner areas inherit the card background */
+.membership-card--cream .membership-body,
+.membership-card--cream .membership-rail,
+.membership-card--cream .membership-media {
+  background: transparent;
+}
+
+/* optional: link styling used in "Position description HERE" */
+.membership-link {
+  color: #1f2a5a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* paragraph note inside body */
+.membership-note-inline {
+  margin-top: 10px;
+  max-width: 44ch;
+}
+
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 950px) {
+  .membership-card {
+    grid-template-columns: 56px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .membership-media {
+    grid-column: 1 / -1;
+    max-height: 460px;
+  }
+
+  .membership-body {
+    padding: 28px 22px 26px;
+  }
+
+  .membership-rail-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .membership-card {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .membership-rail-text {
+    font-size: 18px;
+  }
+
+  .title-sub {
+    font-size: 14px;
+  }
+}
+
+
 
 
 
