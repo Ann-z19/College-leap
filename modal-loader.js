@@ -16,7 +16,7 @@
             <div class="modal-col">
               <h3>BUSINESS</h3>
               <ul>
-                <li><a href="" class="modal-list">2020 National Business Plan Competition (NBPC)</a></li>
+                <li><a href="resource/nbpc.html" class="modal-list">2020 National Business Plan Competition (NBPC)</a></li>
                 <li><a href="" class="modal-list">2021 Community College Business Invitation</a></li>
               </ul>
             </div>

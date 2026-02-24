@@ -49,44 +49,44 @@ function autoSlides() {
 autoSlides();
 
 /* === TESTIMONIAL SLIDER === */
-let tIndex = 0;
-let tSlides = document.getElementsByClassName("t-slide");
-let tDotsBox = document.querySelector(".t-dots");
+(function() {
+  let tSlides = document.getElementsByClassName("t-slide");
+  let tDotsBox = document.querySelector(".t-dots");
+  if (!tSlides.length || !tDotsBox) return;
 
-// Create dots dynamically (matches slide count)
-for (let i = 0; i < tSlides.length; i++) {
-  let dot = document.createElement("span");
-  dot.setAttribute("data-id", i);
-  dot.onclick = function() {
-    showTestimonial(i);
-  };
-  tDotsBox.appendChild(dot);
-}
+  let tIndex = 0;
 
-let tDots = tDotsBox.getElementsByTagName("span");
-
-function showTestimonial(n) {
   for (let i = 0; i < tSlides.length; i++) {
-    tSlides[i].style.display = "none";
-    tDots[i].classList.remove("active");
+    let dot = document.createElement("span");
+    dot.setAttribute("data-id", i);
+    dot.onclick = (function(idx) {
+      return function() { showTestimonial(idx); };
+    })(i);
+    tDotsBox.appendChild(dot);
   }
 
-  tSlides[n].style.display = "block";
-  tDots[n].classList.add("active");
+  let tDots = tDotsBox.getElementsByTagName("span");
 
-  tIndex = n;
-}
+  function showTestimonial(n) {
+    for (let i = 0; i < tSlides.length; i++) {
+      tSlides[i].style.display = "none";
+      tDots[i].classList.remove("active");
+    }
+    tSlides[n].style.display = "block";
+    tDots[n].classList.add("active");
+    tIndex = n;
+  }
 
-// autoplay
-function autoTestimonial() {
-  tIndex++;
-  if (tIndex >= tSlides.length) tIndex = 0;
-  showTestimonial(tIndex);
-  setTimeout(autoTestimonial, 6000); // 6 seconds
-}
+  function autoTestimonial() {
+    tIndex++;
+    if (tIndex >= tSlides.length) tIndex = 0;
+    showTestimonial(tIndex);
+    setTimeout(autoTestimonial, 6000);
+  }
 
-showTestimonial(0);
-autoTestimonial();
+  showTestimonial(0);
+  autoTestimonial();
+})();
 
 // ===== Our Chapters modal =====
 (() => {
@@ -153,3 +153,94 @@ autoTestimonial();
     if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
   });
 })();
+
+/* == Rules Slider == */
+(function () {
+  var slides = document.querySelectorAll('.nbpc-rule-slide');
+  var dots   = document.querySelectorAll('.nbpc-rules-dot');
+  if (!slides.length) return;
+
+  var cur   = 0;
+  var timer = null;
+  var DELAY = 4000;
+
+  function show(n) {
+    slides[cur].classList.remove('active');
+    dots[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    dots[cur].classList.add('active');
+  }
+
+  function startAuto() {
+    stopAuto();
+    timer = setInterval(function () { show(cur + 1); }, DELAY);
+  }
+
+  function stopAuto() {
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+
+  window.rulesSlide = function (d) { show(cur + d); startAuto(); };
+  window.rulesGoTo  = function (n) { show(n);       startAuto(); };
+
+  var container = document.querySelector('.nbpc-rules-slideshow');
+  if (container) {
+    container.addEventListener('mouseenter', stopAuto);
+    container.addEventListener('mouseleave', startAuto);
+  }
+
+  startAuto();
+})();
+
+/* == Flyer Slideshow == */
+(function () {
+  var slides = document.querySelectorAll('.nbpc-flyer-slide');
+  if (!slides.length) return;
+
+  var cur = 0;
+
+  function show(n) {
+    slides[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+  }
+
+  window.flyerSlide = function (d) { show(cur + d); };
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
