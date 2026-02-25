@@ -10405,7 +10405,7 @@ h3.eyebrow {
 
 .nbpc-flyer-slide img {
   width: 100% !important;
-  height: auto !important;
+  height: 600px !important;
   max-width: 100% !important;
   display: block;
   border-radius: 4px;
@@ -10442,6 +10442,145 @@ h3.eyebrow {
   .nbpc-flyers-display { flex-direction: column; align-items: center; }
   .nbpc-flyer-slideshow { width: 100%; }
 }
+
+/* =============================================
+   NBPC FOOTER SECTION
+   ============================================= */
+
+.nbpc-footer-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 160px;
+}
+
+.nbpc-footer-left {
+  background: #1d2b4f;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.nbpc-footer-seal {
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  object-fit: contain;
+}
+
+.nbpc-footer-left p {
+  font-size: 0.82rem;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.nbpc-footer-center {
+  background: #f5c842;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.nbpc-footer-center h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0;
+}
+
+.nbpc-footer-center p {
+  font-size: 0.82rem;
+  color: #1d2b4f;
+  margin: 0;
+}
+
+.nbpc-footer-social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nbpc-footer-social img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  object-fit: contain;
+}
+
+.nbpc-footer-right {
+  background: #b1272f;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.nbpc-footer-logo {
+  width: 140px !important;
+  height: auto !important;
+  max-width: 140px !important;
+  object-fit: contain;
+}
+
+.nbpc-footer-right p {
+  font-size: 0.82rem;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .nbpc-footer-sec { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
