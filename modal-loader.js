@@ -17,14 +17,14 @@
               <h3>BUSINESS</h3>
               <ul>
                 <li><a href="nbpc.html" class="modal-list">2020 National Business Plan Competition (NBPC)</a></li>
-                <li><a href="" class="modal-list">2021 Community College Business Invitation</a></li>
+                <li><a href="ccbi.html" class="modal-list">2021 Community College Business Invitation</a></li>
               </ul>
             </div>
 
             <div class="modal-col">
               <h3>TRANSFER</h3>
               <ul>
-                <li><a href="" class="modal-list">2020 Transfer Student Panel Series (TSPS)</a></li>
+                <li><a href="ccbi.html" class="modal-list">2020 Transfer Student Panel Series (TSPS)</a></li>
                 <li><a href="" class="modal-list">International Alumni Network (IAN)</a></li>
                 <li><a href="" class="modal-list">Opportunities at Universities (OAU)</a></li>
               </ul>
