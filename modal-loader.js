@@ -24,7 +24,7 @@
             <div class="modal-col">
               <h3>TRANSFER</h3>
               <ul>
-                <li><a href="ccbi.html" class="modal-list">2020 Transfer Student Panel Series (TSPS)</a></li>
+                <li><a href="tsps.html" class="modal-list">2020 Transfer Student Panel Series (TSPS)</a></li>
                 <li><a href="" class="modal-list">International Alumni Network (IAN)</a></li>
                 <li><a href="" class="modal-list">Opportunities at Universities (OAU)</a></li>
               </ul>
