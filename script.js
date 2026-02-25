@@ -166,10 +166,10 @@ autoSlides();
 
   function show(n) {
     slides[cur].classList.remove('active');
-    dots[cur].classList.remove('active');
+    if (dots[cur]) dots[cur].classList.remove('active');
     cur = (n + slides.length) % slides.length;
     slides[cur].classList.add('active');
-    dots[cur].classList.add('active');
+    if (dots[cur]) dots[cur].classList.add('active');
   }
 
   function startAuto() {
@@ -208,39 +208,3 @@ autoSlides();
 
   window.flyerSlide = function (d) { show(cur + d); };
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

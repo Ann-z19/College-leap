@@ -33,7 +33,7 @@
             <div class="modal-col">
               <h3>SOCIAL SCIENCE</h3>
               <ul>
-                <li><a href="" class="modal-list">2021 Creative Research Challenge (CRC)</a></li>
+                <li><a href="crc.html" class="modal-list">2021 Creative Research Challenge (CRC)</a></li>
               </ul>
             </div>
 
