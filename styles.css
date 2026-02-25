@@ -10544,8 +10544,593 @@ h3.eyebrow {
   .nbpc-footer-sec { grid-template-columns: 1fr; }
 }
 
+/* =============================================
+   CCBI HERO SLIDES
+   ============================================= */
+
+.ccbi-slide1,
+.ccbi-slide2,
+.ccbi-slide3 { display: none; }
+
+.ccbi-slide1 img,
+.ccbi-slide2 img,
+.ccbi-slide3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── SLIDE 1 ──
+   Logo+title already in bg image top-left.
+   Text content goes center-left below it. */
+.ccbi-caption1 {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 38%;
+  max-width: 480px;
+}
+
+.ccbi-s1-desc {
+  font-size: clamp(0.95rem, 1.3vw, 1.2rem);
+  color: #1d3a6e;
+  line-height: 1.55;
+  margin: 0 0 24px 0;
+}
+
+.ccbi-s1-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ── SLIDE 2 ──
+   "CASE" big text on far left (in bg).
+   Logo in bg top-left. Text content below logo area. */
+.ccbi-caption2 {
+  position: absolute;
+  top: 58%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 36%;
+  max-width: 440px;
+}
+
+.ccbi-s2-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.65;
+  margin: 0 0 24px 0;
+}
+
+/* ── SLIDE 3 ──
+   "PITCH" big text on far left (in bg).
+   Logo in bg top-left. Text content below logo area. */
+.ccbi-caption3 {
+  position: absolute;
+  top: 58%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 36%;
+  max-width: 440px;
+}
+
+.ccbi-s3-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.65;
+  margin: 0 0 24px 0;
+}
+
+/* ── SHARED COLORS & BUTTONS ── */
+.ccbi-blue { color: #2e6be6; }
+.ccbi-pink { color: #d44d8a; }
+
+.ccbi-btn-pink {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #d44d8a;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.ccbi-btn-navy {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #1d3a6e;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.ccbi-btn-pink:hover { filter: brightness(1.1); }
+.ccbi-btn-navy:hover { filter: brightness(1.2); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .ccbi-caption1 { left: 16%; width: 44%; }
+  .ccbi-caption2,
+  .ccbi-caption3 { left: 16%; width: 44%; }
+}
+
+@media (max-width: 768px) {
+  .ccbi-caption1,
+  .ccbi-caption2,
+  .ccbi-caption3 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    background: rgba(255,255,255,0.88);
+    border-radius: 10px;
+    padding: 16px;
+  }
+}
+
+/* =============================================
+   CCBI INTRO SECTION
+   ============================================= */
+
+.ccbi-intro-sec {
+  background: #f5f0e8;
+  padding: 50px 20px 50px;
+}
+
+.ccbi-intro-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ccbi-intro-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0 0 10px 0;
+}
+
+.ccbi-intro-sub {
+  font-size: 0.95rem;
+  color: #3b4761;
+  margin: 0 0 32px 0;
+}
+
+.ccbi-intro-blue { color: #b1272f; font-weight: 600; }
+
+/* Two-column layout */
+.ccbi-intro-body {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+}
+
+/* Left: video */
+.ccbi-intro-video { flex: 1; }
+
+.ccbi-video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+
+.ccbi-video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* Right: two cards stacked */
+.ccbi-intro-cards {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.ccbi-intro-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ccbi-card-logo {
+  width: auto !important;
+  height: 60px !important;
+  max-width: 200px !important;
+  object-fit: contain;
+  display: block;
+}
+
+.ccbi-card-desc {
+  font-size: 0.88rem;
+  color: #3b4761;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .ccbi-intro-body  { flex-direction: column; }
+  .ccbi-intro-cards { flex: none; width: 100%; }
+}
 
 
+/* =============================================
+   CCBI COMPETITION SECTIONS
+   ============================================= */
+
+.ccbi-comp-sec {
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.ccbi-comp-sec--alt {
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.ccbi-comp-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Logo row centered */
+.ccbi-comp-logo-row {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ccbi-comp-logo {
+  height: 80px !important;
+  width: auto !important;
+  max-width: 280px !important;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Description */
+.ccbi-comp-desc {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.ccbi-comp-small {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+/* "To participate" heading */
+.ccbi-comp-participate-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1d2b4f;
+  margin: 0 0 8px 28px;
+}
+
+/* Steps */
+.ccbi-comp-steps {
+  margin: 0 0 24px 40px;
+}
+
+.ccbi-comp-steps p {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 6px 0;
+}
+
+/* Timeline label */
+.ccbi-comp-timeline-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1d2b4f;
+  margin: 0 0 12px 28px;
+}
+
+/* Timeline row: image + register button */
+.ccbi-comp-timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.ccbi-comp-timeline-img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 560px !important;
+  display: block;
+  flex: 1;
+}
+
+/* Register button */
+.ccbi-register-btn {
+  flex-shrink: 0;
+  padding: 12px 28px;
+}
+
+/* Links */
+.ccbi-link-blue { color: #2e6be6; font-weight: 600; text-decoration: underline; }
+.ccbi-link-pink { color: #b1272f; font-weight: 600; }
+
+.ccbi-btn-navy {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #1d3a6e;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.ccbi-btn-navy:hover { filter: brightness(1.2); }
+
+@media (max-width: 700px) {
+  .ccbi-comp-timeline-row { flex-direction: column; align-items: flex-start; }
+  .ccbi-comp-timeline-img { max-width: 100% !important; }
+  .ccbi-comp-steps { margin-left: 16px; }
+  .ccbi-comp-participate-title,
+  .ccbi-comp-timeline-title { margin-left: 16px; }
+}
+
+/* =============================================
+   CCBI PARTICIPATING COLLEGES SECTION
+   ============================================= */
+
+.ccbi-colleges-sec {
+  background: #f5f5f5;
+  padding: 50px 20px;
+}
+
+.ccbi-colleges-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ccbi-colleges-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0 0 8px 0;
+}
+
+.ccbi-colleges-sub {
+  font-size: 0.88rem;
+  color: #666;
+  margin: 0 0 36px 0;
+}
+
+/* 3-column grid */
+.ccbi-colleges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 32px;
+  text-align: left;
+}
+
+.ccbi-college-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ccbi-college-card img {
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  min-width: 70px !important;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ccbi-college-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1d2b4f;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.ccbi-college-info {
+  font-size: 0.78rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 800px) {
+  .ccbi-colleges-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .ccbi-colleges-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   CCBI EDUCATIONAL RESOURCE SECTION
+   ============================================= */
+
+.ccbi-edu-sec {
+  background: #f0f0f0;
+  padding: 50px 20px;
+}
+
+.ccbi-edu-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.ccbi-edu-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.ccbi-edu-sub {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0 0 28px 0;
+  text-align: center;
+}
+
+/* Category heading */
+.ccbi-edu-cat {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #b1272f;
+  margin: 0 0 16px 0;
+}
+
+/* 3-column video grid */
+.ccbi-edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* 16:9 iframe wrapper */
+.ccbi-edu-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #000;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ccbi-edu-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* Links */
+.ccbi-edu-links {
+  margin-left: 24px;
+}
+
+.ccbi-edu-links p {
+  font-size: 0.88rem;
+  color: #333;
+  margin: 0 0 6px 0;
+}
+
+.ccbi-edu-link {
+  color: #b1272f;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+  .ccbi-edu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .ccbi-edu-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   CCBI BOTTOM SECTION
+   ============================================= */
+
+.ccbi-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 120px;
+}
+
+.ccbi-bottom-left {
+  background: #fff;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ccbi-bottom-seal {
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.ccbi-bottom-brand {
+  font-size: 0.78rem;
+  color: #1d3a6e;
+  margin: 0 0 4px 0;
+  letter-spacing: .02em;
+  line-height: 1.4;
+}
+
+.ccbi-bottom-brand strong { font-weight: 800; }
+
+.ccbi-bottom-tagline {
+  font-size: 0.68rem;
+  color: #1d3a6e;
+  margin: 0;
+  letter-spacing: .04em;
+}
+
+.ccbi-bottom-center {
+  background: #f5c842;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.ccbi-bottom-center h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0;
+}
+
+.ccbi-bottom-center p {
+  font-size: 0.85rem;
+  color: #1d2b4f;
+  margin: 0;
+}
+
+.ccbi-bottom-right {
+  background: #b1272f;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ccbi-bottom-cl {
+  height: 50px !important;
+  width: auto !important;
+  max-width: 180px !important;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .ccbi-bottom { grid-template-columns: 1fr; }
+}
 
 
 

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NBPC | College Leap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Top Nav -->
+        <header class="site-header">
+            <div class="container nav">
+            <a href="index.html" class="brand">
+                <img src="image/homepage/college-leap_logo.avif" alt="College Leap logo" />
+            </a>
+            <nav class="menu">
+                <a href="chapters.html">Chapters</a>
+                <a href="#" id="openProjectModal">Resources</a>
+                <!--<a href="#blog">Blog</a>-->
+                <a href="Team.html">Team</a>
+                <a class="btn" href="JoinUs.html">Join</a>
+            </nav>
+            </div>
+        </header>
+
+
+        <!-- CCBI Hero Section -->
+        <section class="hero">
+            <div class="slideshow-container">
+
+                <!-- Slide 1: logo+title already in bg image -->
+                <div class="mySlides fade ccbi-slide1">
+                    <img src="image/Resource/ccbi/hero1.avif" alt="CCBI slide 1">
+                    <div class="ccbi-caption1">
+                        <p class="ccbi-s1-desc">Virtual Case &amp; Pitch Competitions Exclusively<br>for Community College Students</p>
+                        <div class="ccbi-s1-btns">
+                            <a href="#pitch-competition" class="ccbi-btn-pink">Pitch Competition</a>
+                            <a href="#case-competition" class="ccbi-btn-navy">Case Competition</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: CASE + logo already in bg image -->
+                <div class="mySlides fade ccbi-slide2">
+                    <img src="image/Resource/ccbi/hero2.avif" alt="CCBI slide 2">
+                    <div class="ccbi-caption2">
+                        <p class="ccbi-s2-desc">An open competition specially made for <span class="ccbi-blue">all community college students</span> who are interested in practicing their skills to solve real-world business problems.</p>
+                        <a href="#case-competition" class="ccbi-btn-navy">More Information</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3: PITCH + logo already in bg image -->
+                <div class="mySlides fade ccbi-slide3">
+                    <img src="image/Resource/ccbi/hero3.avif" alt="CCBI slide 3">
+                    <div class="ccbi-caption3">
+                        <p class="ccbi-s3-desc">An invite-only competition for <span class="ccbi-pink">community college student entrepreneurs</span> who are interested in taking their business ideas to the next level</p>
+                        <a href="#pitch-competition" class="ccbi-btn-pink">More Information</a>
+                    </div>
+                </div>
+
+                <!-- Prev/Next -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- CCBI Intro Section -->
+        <section class="ccbi-intro-sec">
+            <div class="ccbi-intro-inner">
+                <h2 class="ccbi-intro-title">Community College Business Invitational</h2>
+                <p class="ccbi-intro-sub">Virtual Business <span class="ccbi-intro-blue">Case &amp; Pitch Competitions</span> for Community College Students</p>
+
+                <div class="ccbi-intro-body">
+                    <!-- Left: YouTube embed -->
+                    <div class="ccbi-intro-video">
+                        <div class="ccbi-video-embed">
+                            <iframe width="468" height="265" src="https://www.youtube.com/embed/IyhgLjnVoNw" title="Community College Business Invitational-Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Right: two competition cards -->
+                    <div class="ccbi-intro-cards">
+                        <div class="ccbi-intro-card">
+                            <img class="ccbi-card-logo" src="image/Resource/ccbi/pitchComp.avif" alt="Pitch Competition">
+                            <p class="ccbi-card-desc">Teams will present <span class="ccbi-intro-blue">business ideas and plans</span> virtually and compete in multiple regional and national rounds.</p>
+                        </div>
+                        <div class="ccbi-intro-card">
+                            <img class="ccbi-card-logo" src="image/Resource/ccbi/caseComp.avif" alt="Case Competition">
+                            <p class="ccbi-card-desc">Teams will solve <span class="ccbi-intro-blue">a real-world business problem</span> in the form of proposals and presentations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CCBI CASE Competition Section -->
+        <section class="ccbi-comp-sec" id="case-competition">
+            <div class="ccbi-comp-inner">
+                <div class="ccbi-comp-logo-row">
+                    <img class="ccbi-comp-logo" src="image/Resource/ccbi/caseComp.avif" alt="CCBI Case Competition">
+                </div>
+
+                <p class="ccbi-comp-desc">Individuals or teams (up to 5 members) will be asked to solve a business problem faced by an actual company in roughly a month. All community college students are welcome <span class="ccbi-comp-small">(your colleges do NOT need to be CCBI participating colleges).</span></p>
+
+                <p class="ccbi-comp-participate-title">To participate, your team will need to</p>
+                <div class="ccbi-comp-steps">
+                    <p>(1) <strong>Register</strong> using the link below (the case and instructions will be announced after the registration deadline)</p>
+                    <p>(2) <strong>Submit a proposal</strong> to address key messages of your solution;</p>
+                    <p>(3) A handful of teams (5–7 teams) with the best proposals will be invited to <strong>present their solutions</strong> to the judges. (teams must have presentation decks ready before the presentation day)</p>
+                </div>
+
+                <p class="ccbi-comp-timeline-title">Updated Timeline</p>
+                <div class="ccbi-comp-timeline-row">
+                    <img class="ccbi-comp-timeline-img" src="image/Resource/ccbi/case_timeline.avif" alt="Case Competition Timeline">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc49F5xyX6n6kC55RQR154D7kkIbKZieFF_HoD8h5TNVaSdFQ/viewform" class="ccbi-btn-navy ccbi-register-btn">Register</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CCBI PITCH Competition Section -->
+        <section class="ccbi-comp-sec ccbi-comp-sec--alt" id="pitch-competition">
+            <div class="ccbi-comp-inner">
+                <div class="ccbi-comp-logo-row">
+                    <img class="ccbi-comp-logo" src="image/Resource/ccbi/pitchComp_white.avif" alt="CCBI Pitch Competition">
+                </div>
+
+                <p class="ccbi-comp-desc">Individuals or teams (up to 5 members) will be asked to present their business ideas and plans virtually to judges in multiple regional and national rounds. Each CCBI participating college will be eligible to recommend up to 2 participating teams.</p>
+
+                <p class="ccbi-comp-participate-title">To participate:</p>
+                <div class="ccbi-comp-steps">
+                    <p>(1) Your college needs to sign up as a CCBI participating college (<a href="#" class="ccbi-link-blue">How to sign up for your college?</a>)</p>
+                    <p>(2) You need to ask the <span class="ccbi-link-blue">CCBI Advisor</span> at your college to recommend your team (you can find the advisor below);</p>
+                    <p>(3) At the time of the recommendation, your team should have already completed the whole, or most part of, presentation deck.</p>
+                    <p>(4) Depending on the region your college is in, you will need to compete in the <span class="ccbi-link-blue">regional qualifiers and finals</span>. The best-performing teams from each region will move on to the <span class="ccbi-link-pink">national semi-finals and final</span>.</p>
+                </div>
+
+                <p class="ccbi-comp-timeline-title">Timeline</p>
+                <img class="ccbi-comp-timeline-img" src="image/Resource/ccbi/pitch_timeline.avif" alt="Pitch Competition Timeline">
+            </div>
+        </section>
+
+        <!-- CCBI Participating Colleges Section -->
+        <section class="ccbi-colleges-sec" id="participating-colleges">
+            <div class="ccbi-colleges-inner">
+                <h2 class="ccbi-colleges-title">CCBI Participating Colleges</h2>
+                <p class="ccbi-colleges-sub">Those are some of the colleges who will be participating in CCBI</p>
+
+                <div class="ccbi-colleges-grid">
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/ccsf.avif" alt="City College of San Francisco">
+                        <div>
+                            <p class="ccbi-college-name">City College of San Francisco (CCSF)</p>
+                            <p class="ccbi-college-info">Advisor: Vivian Faustino-Pulliam<br>Email: vfaustino@ccsf.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/shoreline.avif" alt="Shoreline Community College">
+                        <div>
+                            <p class="ccbi-college-name">Shoreline Community College</p>
+                            <p class="ccbi-college-info">Advisor: Nichole "Nicky" McGarity<br>Email: nmcgarity@shoreline.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/ivc.avif" alt="Irvine Valley College">
+                        <div>
+                            <p class="ccbi-college-name">Irvine Valley College (IVC)</p>
+                            <p class="ccbi-college-info">Advisor: John Russo<br>Email: jrusso@ivc.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/bmcc.avif" alt="Borough of Manhattan Community College">
+                        <div>
+                            <p class="ccbi-college-name">Borough of Manhattan Community College (BMCC)</p>
+                            <p class="ccbi-college-info">Advisor: Stephanie Belhomme<br>Email: sbelhomme@bmcc.cuny.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/fullerton.avif" alt="Fullerton College">
+                        <div>
+                            <p class="ccbi-college-name">Fullerton College</p>
+                            <p class="ccbi-college-info">Advisor: Gary Graves<br>Email: ggraves@fullcoll.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/pcc.avif" alt="Pasadena City College">
+                        <div>
+                            <p class="ccbi-college-name">Pasadena City College (PCC)</p>
+                            <p class="ccbi-college-info">Advisor: Donald Loewel<br>Email: dxloewel@pasadena.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/howard.avif" alt="Howard Community College">
+                        <div>
+                            <p class="ccbi-college-name">Howard Community College</p>
+                            <p class="ccbi-college-info">Advisor: Daren Johnson<br>Email: djohnson4@howardcc.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/nsc.avif" alt="North Seattle College">
+                        <div>
+                            <p class="ccbi-college-name">North Seattle College</p>
+                            <p class="ccbi-college-info">Advisor: Ronald Woods<br>Email: ronald.woods@seattlecolleges.edu</p>
+                        </div>
+                    </div>
+                    <div class="ccbi-college-card">
+                        <img src="image/Resource/ccbi/participant/bcc.avif" alt="Bronx Community College">
+                        <div>
+                            <p class="ccbi-college-name">Bronx Community College</p>
+                            <p class="ccbi-college-info">Advisor: Harini Mittal<br>Email: harini.mittal@bcc.cuny.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CCBI Educational Resource Section -->
+        <section class="ccbi-edu-sec" id="educational-resource">
+            <div class="ccbi-edu-inner">
+                <h2 class="ccbi-edu-title">CCBI Educational Resource</h2>
+                <p class="ccbi-edu-sub">Here are a list of resources you can take advantage to prepare for CCBI</p>
+
+                <p class="ccbi-edu-cat">2020 NBPC Recordings</p>
+
+                <div class="ccbi-edu-grid">
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/hO3q6Rxq19s" title="2020 NBPC-Workshop 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/7XCtowQuWWQ" title="2020 NBPC-Workshop 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/Q09H--68zYw" title="2020 NBPC-Workshop 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/BUxQ6M5qFKA" title="2020 NBPC-Workshop 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/SV3yU_1a1yI" title="2020 NBPC-Workshop 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/Jv4l27MXkJo" title="2020NBPC-Workshop 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/i54zktL-B-M" title="2020NBPC-Workshop 7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/Iq43BICNoZo" title="2020NBPC-Workshop 8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="ccbi-edu-embed"><iframe width="270" height="180" src="https://www.youtube.com/embed/ENmFKDzWVrQ" title="2020NBPC-Workshop 9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
+
+                <p class="ccbi-edu-cat">Tombo Consulting Group Training Materials</p>
+
+                <div class="ccbi-edu-links">
+                    <p><a href="files/NBPC Template.pptx.pdf" class="ccbi-edu-link">Here</a> is a business plan guideline deck you may find useful when you work on your business plan</p>
+                    <p><a href="files/NBPC RULES.pdf" class="ccbi-edu-link">Here</a> is the full rubric for first-round and regional-round.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--CCBI National Judges(Same as NBPC)-->
+        <section class="nbpc-judges-sec" id="judges">
+            <div class="nbpc-judges-inner">
+                <h2 class="nbpc-judges-title">CCBI National Rounds Judges</h2>
+                <p class="nbpc-judges-sub">Successful Entrepreneurs, Business Faculties, and VC Partners</p>
+
+                <!-- Row 1: 5 judges -->
+                <div class="nbpc-judges-row">
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/stephen.avif" alt="Stephen Torres">
+                        <p class="nbpc-judge-name">Stephen Torres</p>
+                        <p class="nbpc-judge-desc">Entrepreneur &amp; <span class="nbpc-j-red">CC alumnus</span><br>Industry Fellow and Faculty at UC Berkeley</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/alex.avif" alt="Alex Budak">
+                        <p class="nbpc-judge-name">Alex Budak</p>
+                        <p class="nbpc-judge-desc">Social Entrepreneur &amp; Changemaker Faculty &amp; Director at Berkeley Haas Global Access Program</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/AnelisaLauri.avif" alt="Anelisa Lauri">
+                        <p class="nbpc-judge-name">Anelisa Lauri</p>
+                        <p class="nbpc-judge-desc">Program Manager at National Association of Community College Entrepreneurship <strong>(NACCE)</strong></p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/Charles.avif" alt="Charles Eason">
+                        <p class="nbpc-judge-name">Charles Eason</p>
+                        <p class="nbpc-judge-desc">Statewide Director, Business and Entrepreneurship, California Community Colleges</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/Iris.avif" alt="Iris Quan">
+                        <p class="nbpc-judge-name">Iris Quan</p>
+                        <p class="nbpc-judge-desc">Partner at TSVC &amp; Professor of Entrepreneurship at San Jose State University</p>
+                    </div>
+                </div>
+
+                <!-- Row 2: 4 judges centered -->
+                <div class="nbpc-judges-row">
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/Yubo.avif" alt="Yubo Ruan">
+                        <p class="nbpc-judge-name">Yubo Ruan</p>
+                        <p class="nbpc-judge-desc">Entrepreneur &amp; <span class="nbpc-j-red">CC Alumnus</span><br>Founder at 8 Decimal Capital</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/william.avif" alt="William Rosenzweig">
+                        <p class="nbpc-judge-name">William Rosenzweig</p>
+                        <p class="nbpc-judge-desc">Social Entrepreneur &amp; Professional Faculty &amp; Social Impact Fellow at UC Berkeley Haas</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/gigi.avif" alt="Gigi Wang">
+                        <p class="nbpc-judge-name">Gigi Wang</p>
+                        <p class="nbpc-judge-desc">Startup Mentors &amp; Industry Fellow and Faculty at UC Berkeley</p>
+                    </div>
+                    <div class="nbpc-judge-card">
+                        <img class="nbpc-judge-photo" src="image/Resource/NBPC/dariush.avif" alt="Dariush Zehdi">
+                        <p class="nbpc-judge-name">Dariush Zehdi</p>
+                        <p class="nbpc-judge-desc">Director of UC Berkeley Center for Entrepreneurship and Development at AMENA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CCBI Bottom Section -->
+        <section class="ccbi-bottom">
+            <div class="ccbi-bottom-left">
+                <img class="ccbi-bottom-seal" src="image/Resource/ccbi/ccbi.avif" alt="CCBI Logo">
+            </div>
+            <div class="ccbi-bottom-center">
+                <h3>Contact Us</h3>
+                <p>ccbi@collegeleap.cc</p>
+                <p>team@collegeleap.cc</p>
+            </div>
+            <div class="ccbi-bottom-right">
+                <img class="ccbi-bottom-cl" src="image/Resource/NBPC/collegeleap_white_logo.avif" alt="College Leap">
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script src="modal-loader.js"></script>
+    </body>
+
+          <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-logo">
+            <img src="image/homepage/com_college-logo.avif" alt="College Leap seal">
+            </div>
+
+            <div class="footer-contact">
+            <p>Email: <a href="mailto:team@collegeleap.cc">team@collegeleap.cc</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <div class="container">
+            © 2025 College Leap. All rights reserved.
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/college-leap/">
+            <img src="image/homepage/linkedin_logo.avif" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/collegeleapnpo">
+            <img src="image/homepage/facebook_logo.avif" alt="Facebook">
+            </a>
+            <a href="https://x.com/CollegeLeapNPO">
+            <img src="image/homepage/x_logo.avif" alt="X">
+            </a>
+            <a href="https://www.youtube.com/channel/UCVheEuoD-r7-dJs_ZorBwgA/videos">
+            <img src="image/homepage/youtube_logo.avif" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/collegeleap/#">
+            <img src="image/homepage/ig_logo.avif" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</html>
