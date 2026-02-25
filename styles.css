@@ -11288,6 +11288,146 @@ h3.eyebrow {
   margin: 0 auto;
 }
 
+/* =============================================
+   OAU HERO SECTION
+   ============================================= */
+
+.oau-hero-sec {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.oau-hero-bg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  display: block;
+}
+
+.oau-hero-caption {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  width: 42%;
+  max-width: 500px;
+}
+
+.oau-hero-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.oau-hero-title {
+  font-size: clamp(1rem, 1.5vw, 1.4rem) !important;
+  font-weight: 700 !important;
+  color: #1d2b4f !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+.oau-hero-list {
+  padding-left: 60px;
+}
+
+.oau-hero-list p {
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+  color: #333;
+  margin: 0 0 4px 0;
+  line-height: 1.7;
+}
+
+.oau-red { color: #c0392b; font-weight: 600; }
+
+@media (max-width: 768px) {
+  .oau-hero-caption {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    background: rgba(255,255,255,0.88);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .oau-hero-list { padding-left: 0; }
+}
+
+/* =============================================
+   THE OAU SECTION
+   ============================================= */
+
+.oau-about-sec {
+  background: #f5f5f5;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+.oau-about-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Left */
+.oau-about-left {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.oau-about-logo {
+  width: 140px !important;
+  height: auto !important;
+  max-width: 140px !important;
+  object-fit: contain;
+}
+
+.oau-about-social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.oau-about-social img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Right */
+.oau-about-right { flex: 1; max-width: 50ch; }
+
+.oau-about-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1d2b4f;
+  margin: 0 0 16px 0;
+  letter-spacing: .04em;
+  padding-left: 20px;
+}
+
+.oau-about-desc {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.75;
+  margin: 0 0 14px 0;
+}
+
+.oau-link-red { color: #c0392b; }
+
+@media (max-width: 600px) {
+  .oau-about-inner { flex-direction: column; text-align: center; }
+  .oau-about-left  { flex: none; }
+}
+
 
 
 
