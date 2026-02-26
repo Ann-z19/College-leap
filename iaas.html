@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>IAAS | College Leap </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Top Nav -->
+        <header class="site-header">
+            <div class="container nav">
+            <a href="#" class="brand">
+                <img src="image/homepage/college-leap_logo.avif" alt="College Leap logo" />
+            </a>
+            <nav class="menu">
+                <a href="chapters.html">Chapters</a>
+                <a href="#" id="openProjectModal">Resources</a>
+                <!--<a href="#blog">Blog</a>-->
+                <a href="Team.html">Team</a>
+                <a class="btn" href="JoinUs.html">Join</a>
+            </nav>
+            </div>
+        </header>
+
+        <!-- IAAS Hero Section -->
+        <section class="hero">
+            <div class="slideshow-container">
+
+                <!-- Slide 1 -->
+                <div class="mySlides fade iaas-slide1">
+                    <img src="image/Resource/IAAS/hero1.avif" alt="IAAS slide 1">
+                    <div class="iaas-caption1">
+                        <h2 class="iaas-s1-title">FIND YOUR FIRST STARTUP INTERNSHIP</h2>
+                        <p class="iaas-s1-desc"><span class="iaas-orange">IAAS (Intern-At-A-Startup)</span> is a program for community college students to find and apply for internship and cofounder positions at startups and student projects respectively.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="mySlides fade iaas-slide2">
+                    <img src="image/Resource/IAAS/hero2.avif" alt="IAAS slide 2">
+                    <div class="iaas-caption2">
+                        <h2 class="iaas-s2-title">Student <span class="iaas-orange">Projects</span></h2>
+                        <p class="iaas-s2-desc">Students who work on their own projects could search for founding team members or important roles via IAAS</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="mySlides fade iaas-slide3">
+                    <img src="image/Resource/IAAS/hero3.avif" alt="IAAS slide 3">
+                    <div class="iaas-caption3">
+                        <h2 class="iaas-s3-title"><span class="iaas-orange">Startups</span></h2>
+                        <p class="iaas-s3-desc">Startups that are officialy registered and more established will hire interns via IAAS.</p>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- THE IAAS Section -->
+        <section class="iaas-about-sec" id="the-iaas">
+            <div class="iaas-about-inner">
+                <h2 class="iaas-about-title">THE IAAS</h2>
+
+                <div class="iaas-about-body">
+                    <!-- Left: logo + social -->
+                    <div class="iaas-about-left">
+                        <img class="iaas-about-logo" src="image/Resource/IAAS/iaas_logo.avif" alt="IAAS Logo">
+                        <div class="iaas-about-social">
+                            <a href="https://www.linkedin.com/company/28386788/admin/notifications/all/"><img src="image/homepage/linkedin_logo.avif" alt="LinkedIn"></a>
+                            <a href="https://www.facebook.com/collegeleapnpo"><img src="image/homepage/facebook_logo.avif" alt="Facebook"></a>
+                            <a href="https://www.facebook.com/collegeleapnpo"><img src="image/homepage/x_logo.avif" alt="X"></a>
+                            <a href="https://www.youtube.com/channel/UCVheEuoD-r7-dJs_ZorBwgA/videos"><img src="image/homepage/youtube_logo.avif" alt="YouTube"></a>
+                            <a href="https://www.instagram.com/collegeleap"><img src="image/homepage/ig_logo.avif" alt="Instagram"></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: text + discord -->
+                    <div class="iaas-about-right">
+                        <p class="iaas-about-desc">We understand it would be quite challenging for community college students to find internships at startups or join some students projects at the very early stage So we've built IAAS to help with these processes</p>
+                        <p class="iaas-about-desc">Join Our Discord Server today to find out more!</p>
+
+                        <div class="iaas-discord-row">
+                            <img class="iaas-discord-icon" src="image/Resource/IAAS/discord_logo.avif" alt="Discord">
+                            <p class="iaas-discord-text">Scan or click <a href="https://discord.com/invite/aGtrQBmS6b" class="iaas-discord-link">HERE</a><br>to join CRC Discord Server today —›</p>
+                            <img class="iaas-discord-qr" src="image/Resource/IAAS/discord_qr.avif" alt="QR Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script src="modal-loader.js"></script>
+    </body>
+
+        <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-logo">
+            <img src="image/homepage/com_college-logo.avif" alt="College Leap seal">
+            </div>
+
+            <div class="footer-contact">
+            <p>Email: <a href="mailto:team@collegeleap.cc">team@collegeleap.cc</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <div class="container">
+            © 2025 College Leap. All rights reserved.
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/college-leap/">
+            <img src="image/homepage/linkedin_logo.avif" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/collegeleapnpo">
+            <img src="image/homepage/facebook_logo.avif" alt="Facebook">
+            </a>
+            <a href="https://x.com/CollegeLeapNPO">
+            <img src="image/homepage/x_logo.avif" alt="X">
+            </a>
+            <a href="https://www.youtube.com/channel/UCVheEuoD-r7-dJs_ZorBwgA/videos">
+            <img src="image/homepage/youtube_logo.avif" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/collegeleap">
+            <img src="image/homepage/ig_logo.avif" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</html>

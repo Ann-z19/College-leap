@@ -12702,7 +12702,214 @@ h3.eyebrow {
   object-fit: contain;
 }
 
+/* =============================================
+   IAAS HERO SLIDES
+   ============================================= */
 
+.iaas-slide1, .iaas-slide2, .iaas-slide3 { display: none; }
+
+.iaas-slide1 img, .iaas-slide2 img, .iaas-slide3 img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+
+/* ── SLIDE 1 ── logo+IAAS tag in bg left, text center */
+.iaas-caption1 {
+  position: absolute;
+  top: 50%; left: 38%;
+  transform: translateY(-50%);
+  width: 30%; max-width: 360px;
+  text-align: center;
+}
+
+.iaas-s1-title {
+  font-size: clamp(0.9rem, 1.3vw, 1.2rem) !important;
+  font-weight: 700 !important;
+  color: #1d2b4f !important;
+  letter-spacing: .04em;
+  margin: 0 0 16px 0 !important;
+}
+
+.iaas-s1-desc {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── SLIDE 2 ── logo in bg left, text center-left */
+.iaas-caption2 {
+  position: absolute;
+  top: 50%; left: 38%;
+  transform: translateY(-50%);
+  width: 30%; max-width: 360px;
+  text-align: center;
+}
+
+.iaas-s2-title {
+  font-size: clamp(1rem, 1.4vw, 1.3rem) !important;
+  font-weight: 700 !important;
+  color: #1d2b4f !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.iaas-s2-desc {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── SLIDE 3 ── logo in bg left, text center-left */
+.iaas-caption3 {
+  position: absolute;
+  top: 50%; left: 38%;
+  transform: translateY(-50%);
+  width: 30%; max-width: 360px;
+  text-align: center;
+}
+
+.iaas-s3-title {
+  font-size: clamp(1rem, 1.4vw, 1.3rem) !important;
+  font-weight: 700 !important;
+  color: #1d2b4f !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.iaas-s3-desc {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Shared */
+.iaas-orange { color: #e07b39; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iaas-caption1, .iaas-caption2, .iaas-caption3 {
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    background: rgba(255,255,255,0.88);
+    border-radius: 10px;
+    padding: 16px;
+  }
+}
+
+/* =============================================
+   IAAS ABOUT SECTION
+   ============================================= */
+
+.iaas-about-sec {
+  background: #3a3f9e;
+  padding: 40px 20px;
+}
+
+.iaas-about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.iaas-about-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 28px 0;
+  letter-spacing: .04em;
+}
+
+.iaas-about-body {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left */
+.iaas-about-left {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.iaas-about-logo {
+  width: 150px !important;
+  height: auto !important;
+  max-width: 150px !important;
+  object-fit: contain;
+}
+
+.iaas-about-social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.iaas-about-social img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Right */
+.iaas-about-right { flex: 1; }
+
+.iaas-about-desc {
+  font-size: 0.88rem;
+  color: #e8e8ff;
+  line-height: 1.75;
+  margin: 0 0 14px 0;
+}
+
+/* Discord row */
+.iaas-discord-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.iaas-discord-icon {
+  width: 48px !important;
+  height: 48px !important;
+  max-width: 48px !important;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.iaas-discord-text {
+  font-size: 0.82rem;
+  color: #e8e8ff;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.iaas-discord-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.iaas-discord-qr {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .iaas-about-body  { flex-direction: column; align-items: center; }
+  .iaas-about-left  { flex: none; }
+  .iaas-discord-row { flex-wrap: wrap; justify-content: center; }
+}
 
 
 
