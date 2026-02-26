@@ -74,7 +74,7 @@
           </div>
 
           <aside class="modal-side modal-col">
-            <a class="modal-btn" href="chapters.html">Become A Project Associate</a>
+            <a class="modal-btn" href="JoinUs.html#membership">Become A Project Associate</a>
           </aside>
         </div>
       </div>
