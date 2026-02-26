@@ -48,7 +48,7 @@
             <div class="modal-col">
               <h3>INTERNSHIP</h3>
               <ul>
-                <li><a href="" class="modal-list">Career &amp; Internship Preparation Seminar (CIPS)</a></li>
+                <li><a href="cips.html" class="modal-list">Career &amp; Internship Preparation Seminar (CIPS)</a></li>
                 <li><a href="" class="modal-list">Intern-At-Startups (IAAS)</a></li>
               </ul>
             </div>
